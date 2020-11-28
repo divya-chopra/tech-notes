@@ -1,0 +1,39 @@
+Event Bridge
+
+Use Case:
+If two organizations wants to share info with each other and they dont want to use API
+as API is synchronous. And they dont want to do FTP.
+
+Use Event Bridge
+
+BUS:
+
+Communication system that transfers data between computers/ systems
+
+Event Bus:
+Allows different components to communicate with each other without knowing about each other
+
+Service A -> Sends events to event bus -> Service BUS
+
+There is no interdependency as long as both services understands the events
+
+Source Service A:
+AWS ServiceSame or different account
+
+Destination Service B:
+Lambda / any service
+
+
+EVENT Bridge:
+Its superset of event bus
+In Source Services, We can also add SAAS Providers. Like datadog/ Zendesk
+Destination  : AWS Services
+Event bus : AWS/ Partner Bus
+Can provide rules before it goes to processing service
+Serverless service
+
+
+Usecase:
+Easily build event driven architecture using SAAS Apps.
+
+
